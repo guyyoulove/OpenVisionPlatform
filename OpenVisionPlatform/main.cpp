@@ -1,6 +1,6 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-
+#include <QIcon>
 
 int main(int argc, char *argv[])
 {
@@ -9,9 +9,10 @@ int main(int argc, char *argv[])
 #endif
     QGuiApplication app(argc, argv);
 
+    app.setWindowIcon(QIcon(QStringLiteral(":/Images/flowgraph")));
     QQmlApplicationEngine engine;
 
-    const QUrl url(QStringLiteral("qrc:/Resource/MainWindow.qml"));
+    const QUrl url(QStringLiteral("qrc:/MainWindow.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
         &app, [url](QObject *obj, const QUrl &objUrl) {
             if (!obj && url == objUrl)

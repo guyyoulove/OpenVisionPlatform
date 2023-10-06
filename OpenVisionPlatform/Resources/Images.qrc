@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/flowgraph.png</file>
+        <file>Images/BackImageLarge.png</file>
+    </qresource>
+</RCC>
