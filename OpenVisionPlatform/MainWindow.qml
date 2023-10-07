@@ -54,14 +54,14 @@ FluWindow{
 
         RowLayout{
             Layout.fillWidth: true
-
+            spacing: 2
             ColumnLayout{
                 Layout.alignment: Qt.AlignLeft
                 Layout.fillHeight: true
                 Layout.preferredWidth: 300
                 Layout.maximumWidth:350
                 width: 350
-
+                spacing: 2
                 ToolBoxView{
                     Layout.fillHeight: true
                     Layout.fillWidth: true
@@ -89,7 +89,7 @@ FluWindow{
                 Layout.fillHeight: true
                 Layout.preferredWidth: 450
                 Layout.maximumWidth:450
-
+                spacing: 2
                 ImageView{
                     Layout.fillHeight: true
                     Layout.fillWidth: true
@@ -100,6 +100,18 @@ FluWindow{
                     Layout.fillHeight: true
                     Layout.fillWidth: true
                     color: "#00AAAA"
+                }
+
+                CustomIconButton{
+                    width:100
+                    height: 40
+                    Layout.fillWidth: true
+                    iconSource: "qrc:/Images/flowgraph.png"
+                    iconWidth: 32
+                    iconHeight: 32
+                    toolTip:"test"
+
+
                 }
             }
 
